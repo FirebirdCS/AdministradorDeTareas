@@ -149,7 +149,7 @@ class TaskManager(tk.Tk):
         except psutil.AccessDenied:
             messagebox.showerror("Error", "Acceso denegado para suspender el proceso.")
         self.refresh_process_list()
-     # Método para suspender un proceso
+    # Método para resumir un proceso
     def resume_selected(self):
         pid = self.get_selected_pid()
         if pid is None:
